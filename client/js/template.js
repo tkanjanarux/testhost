@@ -1,12 +1,16 @@
 (function (window) {
     function Template() {
         this.defaultTemplate 
-        = '<tr>'
-        +        '<td>{{description}}</td>'
-        +        '<td>{{amount}}</td>'
-        +        '<td>{{category}}</td>'
-        +        '<td>{{paymentVoucher}}</td>'
-        + '</tr>';
+        =   '<tr>'
+        +       '<td>{{description}}</td>'
+        +       '<td>{{amount}}</td>'
+        +       '<td>{{category}}</td>'
+        +       '<td>{{paymentVoucher}}</td>'
+        +       '<td>'
+        +           '<span class="glyphicon glyphicon-edit"></span> '
+        +           '<span class="glyphicon glyphicon-trash"></span>'
+        +       '</td>'
+        +   '</tr>';
     }
     
     Template.prototype.show = function (data) {

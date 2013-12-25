@@ -16,4 +16,6 @@
     window.addEventListener('hashchange', function() {
         account.controller.setView(document.location.hash);
     }.bind(this));
+    
+    window.account = account;
 })();
